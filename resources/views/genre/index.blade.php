@@ -31,7 +31,7 @@
                         <tbody>
                             @foreach($genre as $row)
                             <tr>
-                                <td>{{ $row->name }}</td>
+                                <td>{{ $row -> name }}</td>
                                 
                                 <td>
                                 <a href="{{ route('genre.show',['id'=>$row->id]) }}" class="btn btn-sm btn-success">Detail</a>

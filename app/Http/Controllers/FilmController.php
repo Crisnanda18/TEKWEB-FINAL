@@ -59,7 +59,6 @@ class FilmController extends Controller
         $newposter = $request->file('poster')->getClientOriginalName();
         $request->file('poster')->move('poster/',$newposter);
 
-
         $film = new Film();
         $film->judul = $request->judul;
         $film->sinopsis = $request->sinopsis;
@@ -69,6 +68,7 @@ class FilmController extends Controller
         $film->video_link = $request->video_link;
         $film->kategori_id = $request->kategori_id;
         $film->genre_id = $request->genre_id;
+
         if($film->save()){
             return redirect()->route('film.adminidx')->with('success','Data added successfully');
         }

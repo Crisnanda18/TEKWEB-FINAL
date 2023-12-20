@@ -21,7 +21,7 @@
     <div id="app">
         <nav id="NavBar" class="navbar navbar-expand-md navbar-dark bg-white shadow-sm" style="z-index: 99;">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand" href="#">
                 <img src="{{ asset('assets/icon.png') }}" alt="logo" width="60">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
