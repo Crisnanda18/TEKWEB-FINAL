@@ -13,7 +13,7 @@
                 <form action="{{ route('film.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
-                      <label>Movie Name</label>
+                      <label>Film Name</label>
                       <input type="text" class="form-control" name="judul">
                     </div>
                     @error('nama')
